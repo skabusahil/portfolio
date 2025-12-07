@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SK Abu Sahil — Digital Marketer & SEO Executive</title>
+  <meta name="description" content="SK Abu Sahil — Digital Marketer, SEO Executive. Portfolio: SEO, Analytics, Content & Branding." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0f14;--card:#0f1720;--muted:#9aa4b2;--accent:#6ee7b7;--accent2:#7c5cff}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#05060a 0%, #0b0f14 60%);color:#e6eef6;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    a{color:var(--accent);text-decoration:none}
+    header{position:fixed;left:0;right:0;top:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);backdrop-filter:blur(6px);z-index:50}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;color:#041018}
+    nav{display:flex;gap:18px}
+    nav a{color:var(--muted);font-weight:600;font-size:14px}
+    main{padding-top:110px;max-width:1100px;margin:0 auto}
+
+    /* Hero */
+    .hero{display:flex;gap:36px;align-items:center}
+    .hero-left{flex:1}
+    .eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+    h1{font-size:44px;margin:12px 0 6px;line-height:1.02}
+    h1 .name{background:linear-gradient(90deg,var(--accent) 0%, var(--accent2) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+    p.lead{color:var(--muted);max-width:680px}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 16px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#041018}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .hero-right{width:320px;height:320px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));display:grid;place-items:center;box-shadow:0 10px 40px rgba(0,0,0,0.6);position:relative;overflow:hidden}
+    .orb{position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(48px);opacity:0.8;transform:translate(30px,-80px);background:radial-gradient(circle at 30% 30%, rgba(124,92,255,0.38), rgba(110,231,183,0.18))}
+    .hero-card{position:relative;z-index:2;padding:28px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);width:86%;text-align:center}
+    .hero-card h3{margin:8px 0;color:#e8f3f6}
+    .hero-card p{color:var(--muted);font-size:13px}
+
+    /* sections */
+    section{margin-top:48px;padding:28px;border-radius:14px;background:linear-gradient(180deg,transparent,rgba(255,255,255,0.01));}
+    .grid{display:grid;gap:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--muted);font-size:13px}
+
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{background:linear-gradient(180deg,var(--card),rgba(255,255,255,0.02));padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .muted{color:var(--muted);font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+
+    .projects-list{display:grid;gap:12px}
+    .project{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    .proj-bullet{width:64px;height:48px;border-radius:8px;background:linear-gradient(90deg,var(--accent2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:800;color:#041018}
+
+    footer{margin-top:36px;padding:24px;text-align:center;color:var(--muted)}
+
+    /* animations */
+    .fade-up{opacity:0;transform:translateY(18px);animation:fadeUp .8s forwards}
+    .delay-1{animation-delay:.12s}.delay-2{animation-delay:.18s}.delay-3{animation-delay:.24s}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+
+    /* responsive */
+    @media (max-width:880px){.hero{flex-direction:column}.hero-right{width:100%;height:220px}.cards{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">SA</div>
+      <div>
+        <div style="font-weight:800">SK Abu Sahil</div>
+        <div class="small">Digital Marketer • SEO • Analytics</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow fade-up delay-1">Digital Marketer & SEO Executive</div>
+        <h1 class="fade-up delay-2">Hi, I'm <span class="name">SK Abu Sahil</span></h1>
+        <p class="lead fade-up delay-3">I help brands grow using SEO, performance marketing and creative content. With experience across 20+ projects, I combine data and creativity to drive measurable results — traffic, leads, and stronger brand presence.</p>
+        <div class="cta fade-up delay-3">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
+          <div class="small muted">Location</div>
+          <div style="font-weight:700">Cuttack, Odisha</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="orb"></div>
+        <div class="hero-card">
+          <h3>Fast • Clean • Strategic</h3>
+          <p>SEO Executive at Corporate Ranking — 20+ projects handled. Skills: Off-page SEO, Content Strategy, Analytics, Lead Gen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & SKILLS -->
+    <section class="grid" id="work">
+      <div class="card fade-up delay-1">
+        <h2>About Me</h2>
+        <p class="muted">I’m SK Abu Sahil — a Digital Marketer and SEO Executive with hands-on experience managing 20+ projects. I specialize in Off-Page SEO, content optimization, lead generation and analytics. I hold an MBA with specialization in Marketing & Business Analytics and have completed internships and training at OdiTek Solutions and Corporate Ranking.</p>
+      </div>
+
+      <div class="card fade-up delay-2">
+        <h2>Skills</h2>
+        <div class="skills" aria-hidden>
+          <div class="chip">Off-Page SEO</div>
+          <div class="chip">On-Page SEO</div>
+          <div class="chip">Google Analytics</div>
+          <div class="chip">Keyword Research</div>
+          <div class="chip">Competitor Analysis</div>
+          <div class="chip">Content Strategy</div>
+          <div class="chip">Lead Generation</div>
+          <div class="chip">Canva</div>
+          <div class="chip">Photoshop</div>
+          <div class="chip">Excel</div>
+          <div class="chip">Branding</div>
+          <div class="chip">Digital Strategy</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="cards fade-up delay-2">
+      <div class="card">
+        <h3>SEO Executive — Corporate Ranking</h3>
+        <div class="small">Current role • 4+ months</div>
+        <ul>
+          <li class="small">Handled 20+ SEO projects end-to-end — Off-page strategies, backlinks, guest posting, directory work.</li>
+          <li class="small">Keyword research & competitor audits to improve SERP presence.</li>
+          <li class="small">SEO reporting and performance analysis for clients.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Digital Marketing Intern — OdiTek Solutions</h3>
+        <div class="small">Internship & SIP</div>
+        <ul>
+          <li class="small">On-page & off-page SEO, content writing and design of promotional creatives.</li>
+          <li class="small">Lead generation and campaign support using analytics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="project-section fade-up delay-3">
+      <h2>Selected Projects & Achievements</h2>
+      <div class="projects-list">
+        <div class="project">
+          <div class="proj-bullet">20+</div>
+          <div>
+            <div style="font-weight:800">SEO Portfolio — 20+ Projects</div>
+            <div class="small muted">End-to-end off-page strategies, link building, and visibility improvements across niches.</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="proj-bullet">Lead</div>
+          <div>
+            <div style="font-weight:800">Lead Generation Campaigns</div>
+            <div class="small muted">Targeted SEO and content funnels to capture high-quality leads.</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="proj-bullet">AI</div>
+          <div>
+            <div style="font-weight:800">AI in Digital Marketing (SIP)</div>
+            <div class="small muted">Research on leveraging AI for SEO, personalization and content automation.</div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="proj-bullet">Design</div>
+          <div>
+            <div style="font-weight:800">Creative Assets</div>
+            <div class="small muted">Instagram posters, blog banners and marketing creatives using Canva & Photoshop.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card fade-up delay-3">
+      <h2>Contact</h2>
+      <p class="muted">Let's collaborate. For work inquiries, reach out via email or connect on LinkedIn.</p>
+      <p style="margin-top:10px;font-weight:800">Email: <a href="mailto:skabusahil123@gmail.com">skabusahil123@gmail.com</a></p>
+      <p style="margin-top:6px" class="small muted">LinkedIn: <a href="https://www.linkedin.com/in/sk-abu-sahil-89452328b/" target="_blank">sk-abu-sahil-89452328b</a></p>
+      <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn btn-primary" onclick="copyEmail()">Copy Email</button>
+        <a class="btn btn-ghost" href="mailto:skabusahil123@gmail.com">Send Email</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>Built by SK Abu Sahil • <span class="small muted">Digital Marketing • SEO • Analytics</span></div>
+      <div style="margin-top:8px" class="small muted">Phone: 8144094228 • Location: Cuttack, Odisha</div>
+    </footer>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelectorAll('.fade-up').forEach((el,i)=>{el.style.animationDelay=(i*0.06)+'s'})
+    })
+    function copyEmail(){navigator.clipboard.writeText('skabusahil123@gmail.com').then(()=>{alert('Email copied to clipboard')})}
+  </script>
+  <!-- Animations and Enhancements Added -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => {
+        sec.style.opacity = 0;
+        sec.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          sec.style.transition = "0.8s ease";
+          sec.style.opacity = 1;
+          sec.style.transform = "translateY(0)";
+        }, 200);
+      });
+    });
+  </script>
+  <!-- Added Premium Features: Projects, Resume Button, Theme Toggle, Mobile Menu -->
+
+  <!-- Theme Toggle -->
+  <button id="themeToggle" style="position:fixed; bottom:20px; right:20px; padding:10px 20px; border-radius:12px; cursor:pointer; background:#fff; color:#000; font-weight:bold;">Toggle Theme</button>
+
+  <!-- Projects Section -->
+  <section id="projects" style="margin-top:80px;">
+    <h2 style="color:#00e6e6; font-size:28px;">Featured Projects</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; margin-top:20px;">
+
+      <div style="background:#111; padding:20px; border-radius:15px; box-shadow:0 0 10px #00e6e633;">
+        <h3 style="color:#00e6e6;">SEO Growth Case Study</h3>
+        <p>Boosted organic traffic using advanced SEO strategies including keyword optimization, backlink management, and competitive analysis.</p>
+      </div>
+
+      <div style="background:#111; padding:20px; border-radius:15px; box-shadow:0 0 10px #00e6e633;">
+        <h3 style="color:#00e6e6;">Content Strategy Project</h3>
+        <p>Developed content clusters and improved site structure for better crawlability and user experience.</p>
+      </div>
+
+      <div style="background:#111; padding:20px; border-radius:15px; box-shadow:0 0 10px #00e6e633;">
+        <h3 style="color:#00e6e6;">Lead Generation Campaign</h3>
+        <p>Executed a marketing campaign that generated high-quality leads using SEO and social media ads.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Resume Download Button -->
+  <div style="text-align:center; margin-top:60px;">
+    <a href="resume.pdf" download style="padding:15px 30px; background:#00e6e6; color:#000; font-weight:bold; border-radius:10px; text-decoration:none;">Download Resume</a>
+  </div>
+
+  <!-- Mobile Navigation Script -->
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
+
+  <!-- FULL PREMIUM UPGRADE INSTALLED -->
+
+  <!-- Global Styles Enhancement -->
+  <style>
+    body.light-mode {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+    body.light-mode h1, body.light-mode h2, body.light-mode h3 {
+      color: #0077cc !important;
+    }
+    .skill-card {
+      background:#111; padding:20px; border-radius:15px; box-shadow:0 0 12px #00e6e633;
+      transition:0.3s;
+    }
+    .skill-card:hover {
+      transform:translateY(-5px);
+      box-shadow:0 0 15px #00ffff88;
+    }
+    .progress-bar {
+      height:10px; background:#00e6e6; border-radius:10px;
+    }
+    .social-icons a {
+      color:#00e6e6; margin:0 10px; font-size:24px; text-decoration:none;
+      transition:0.3s;
+    }
+    .social-icons a:hover {
+      color:#fff;
+      text-shadow:0 0 10px #00e6e6;
+    }
+  </style>
+
+  <!-- HERO SECTION IMAGE -->
+  <section id="hero-img" style="margin-top:40px; text-align:center;">
+    <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" style="width:100%; max-height:380px; object-fit:cover; border-radius:20px; box-shadow:0 0 20px #00e6e688;" />
+  </section>
+
+  <!-- SKILLS PREMIUM SECTION -->
+  <section id="skills" style="margin-top:80px;">
+    <h2 style="color:#00e6e6; font-size:28px;">Skills & Expertise</h2>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:25px; margin-top:20px;">
+
+      <div class="skill-card">
+        <h3>SEO (On-Page)</h3>
+        <div class="progress-bar" style="width:95%;"></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>SEO (Off-Page)</h3>
+        <div class="progress-bar" style="width:90%;"></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Google Analytics</h3>
+        <div class="progress-bar" style="width:85%;"></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Keyword Research</h3>
+        <div class="progress-bar" style="width:92%;"></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Content Marketing</h3>
+        <div class="progress-bar" style="width:88%;"></div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Canva & Graphics</h3>
+        <div class="progress-bar" style="width:80%;"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT FORM SECTION -->
+  <section id="contact" style="margin-top:80px; padding-bottom:60px;">
+    <h2 style="color:#00e6e6; font-size:28px;">Contact Me</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL" method="POST" style="margin-top:30px; display:flex; flex-direction:column; gap:15px; max-width:500px;">
+      <input type="text" name="name" placeholder="Your Name" required style="padding:12px;border-radius:10px; border:none;">
+      <input type="email" name="email" placeholder="Your Email" required style="padding:12px;border-radius:10px; border:none;">
+      <textarea name="message" placeholder="Your Message" required style="padding:12px;border-radius:10px; border:none; height:120px;"></textarea>
+      <button type="submit" style="padding:12px; background:#00e6e6; border:none; border-radius:10px; font-weight:bold; cursor:pointer;">Send Message</button>
+    </form>
+  </section>
+
+  <!-- SOCIAL ICONS -->
+  <div style="text-align:center; margin-top:40px;" class="social-icons">
+    <a href="https://www.linkedin.com/in/sk-abu-sahil-89452328b/">🔗</a>
+    <a href="https://github.com/">💻</a>
+    <a href="https://instagram.com/">📸</a>
+  </div>
+
+  <!-- Theme Toggle -->
+  <button id="themeToggle" style="position:fixed; bottom:20px; right:20px; padding:10px 20px; border-radius:12px; cursor:pointer; background:#fff; color:#000; font-weight:bold;">Toggle Theme</button>
+
+  <!-- Script for Toggle -->
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+    });
+  </script>
+
+</body>
+</html>
